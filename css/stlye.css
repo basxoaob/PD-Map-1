@@ -38,14 +38,19 @@
   color: #fff;
 }
 
-/* プルダウンメニューのスタイル */
 .dropdown {
-  position: absolute;
-  top: 20px;
+  position: fixed;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 9999; /* z-indexを大きな値に設定 */
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
+/* プルダウンメニューのセレクトボックス */
 .dropdown-menu {
   font-size: 16px;
   padding: 10px;
