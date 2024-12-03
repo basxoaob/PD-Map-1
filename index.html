@@ -7,28 +7,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="map-container">
-        <!-- 地図画像 -->
-        <img src="img/スライド1.JPG" alt="地図" class="map-image">
+    <!-- プルダウンメニュー -->
+    <div class="dropdown">
+        <select id="building-select" class="dropdown-menu" onchange="navigateBuilding()">
+            <option value="">号館を選択してください</option>
+            <option value="１号館.html">1号館</option>
+            <option value="２号館.html">2号館</option>
+            <option value="３号館.html">3号館</option>
+            <option value="５号館.html">5号館</option>
+            <option value="６号館.html">6号館</option>
+            <option value="７号館.html">7号館</option>
+            <option value="８号館.html">8号館</option>
+            <option value="２１号館.html">21号館</option>
+            <option value="２３号館.html">23号館</option>
+            <option value="２４号館.html">24号館</option>
+            <option value="２６号館.html">26号館</option>
+            <option value="２７号館.html">27号館</option>
+        </select>
+    </div>
 
-        <!-- プルダウンメニュー -->
-        <div class="dropdown">
-            <select id="building-select" class="dropdown-menu" onchange="navigateBuilding()">
-                <option value="">号館を選択してください</option>
-                <option value="１号館.html">1号館</option>
-                <option value="２号館.html">2号館</option>
-                <option value="３号館.html">3号館</option>
-                <option value="５号館.html">5号館</option>
-                <option value="６号館.html">6号館</option>
-                <option value="７号館.html">7号館</option>
-                <option value="８号館.html">8号館</option>
-                <option value="２１号館.html">21号館</option>
-                <option value="２３号館.html">23号館</option>
-                <option value="２４号館.html">24号館</option>
-                <option value="２６号館.html">26号館</option>
-                <option value="２７号館.html">27号館</option>
-            </select>
-        </div>
+    <!-- 地図画像 -->
+    <div class="map-container">
+        <img src="img/スライド1.JPG" alt="地図" class="map-image">
     </div>
 
     <script>
