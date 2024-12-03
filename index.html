@@ -13,19 +13,37 @@
         <img src=" img/スライド1.JPG" alt="地図" class="map-image">
         </p>
 
-        <!-- 各号館のリンク -->
-        <h1><a href="１号館.html" class="button" >1号館</a></h1>
-        <h1><a href="２号館.html" class="button" >2号館</a></h1>
-        <h1><a href="３号館.html" class="button" >3号館</a></h1>
-        <h1><a href="５号館.html" class="button" >5号館</a></h1>
-        <h1><a href="６号館.html" class="button" >6号館</a></h1>
-        <h1><a href="７号館.html" class="button" >7号館</a></h1>
-        <h1><a href="８号館.html" class="button" >8号館</a></h1>
-        <h1><a href="２１号館.html" class="button" >21号館</a></h1>
-        <h1><a href="２３号館.html" class="button" >23号館</a></h1>
-        <h1><a href="２４号館.html" class="button" >24号館</a></h1>
-        <h1><a href="２６号館.html" class="button" >26号館</a></h1>
-        <h1><a href="２７号館.html" class="button" >27号館</a></h1>
+        <!-- プルダウンメニュー -->
+          <div class="dropdown">
+            <select id="building-select" class="dropdown-menu" onchange="navigateBuilding()">
+                <option value="">号館を選択してください</option>
+                <option value="１号館.html">1号館</option>
+                <option value="２号館.html">2号館</option>
+                <option value="３号館.html">3号館</option>
+                <option value="５号館.html">5号館</option>
+                <option value="６号館.html">6号館</option>
+                <option value="７号館.html">7号館</option>
+                <option value="８号館.html">8号館</option>
+                <option value="２１号館.html">21号館</option>
+                <option value="２３号館.html">23号館</option>
+                <option value="２４号館.html">24号館</option>
+                <option value="２６号館.html">26号館</option>
+                <option value="２７号館.html">27号館</option>
+            </select>
+        </div>
+    </div>
+
+    <script>
+        // 選択された号館に移動するスクリプト
+        function navigateBuilding() {
+            const select = document.getElementById('building-select');
+            const selectedValue = select.value;
+
+            if (selectedValue) {
+                window.location.href = selectedValue; // 選択されたページに遷移
+            }
+        }
+    </script>
     </div>
 </body>
 </html>
