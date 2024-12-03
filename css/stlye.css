@@ -32,6 +32,30 @@
   transition: background-color 0.3s ease;
 }
 
+/* プルダウンメニューのスタイル */
+.dropdown {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dropdown-menu {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* ホバー時の効果 */
+.dropdown-menu:hover {
+  border-color: #007BFF;
+  background-color: rgba(0, 128, 255, 0.1);
+}
+
 /* ボタンのホバー効果 */
 .button:hover {
   background-color: rgba(0, 128, 255, 0.8);
