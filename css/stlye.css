@@ -12,10 +12,10 @@
 
 /* 地図画像 */
 .map-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  height: auto; /* 画像のアスペクト比を保持 */
 }
+
 
 /* ボタン共通スタイル */
 .button {
