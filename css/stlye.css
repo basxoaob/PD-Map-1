@@ -32,6 +32,12 @@
   transition: background-color 0.3s ease;
 }
 
+/* ボタンのホバー効果 */
+.button:hover {
+  background-color: rgba(0, 128, 255, 0.8);
+  color: #fff;
+}
+
 /* プルダウンメニューのスタイル */
 .dropdown {
   position: absolute;
@@ -54,12 +60,6 @@
 .dropdown-menu:hover {
   border-color: #007BFF;
   background-color: rgba(0, 128, 255, 0.1);
-}
-
-/* ボタンのホバー効果 */
-.button:hover {
-  background-color: rgba(0, 128, 255, 0.8);
-  color: #fff;
 }
 
 
