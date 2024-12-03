@@ -59,3 +59,15 @@
 .return-button:hover {
   background-color: #0056b3;
 }
+
+@media screen and (（max-width: 768px） {
+  /* 768px以下の画面サイズで適用されるスタイル */
+  }
+  
+  @media screen and (（min-width: 769px） and （max-width: 1024px） {
+  /* 769px~1024pxの画面サイズで適用されるスタイル */
+  }
+  
+  @media screen and (（min-width: 1025px） {
+  /* 1025px以上の画面サイズで適用されるスタイル */
+  }
