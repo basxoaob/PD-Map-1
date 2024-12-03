@@ -38,27 +38,28 @@
   color: #fff;
 }
 
+/* プルダウンメニューのスタイル */
 .dropdown {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.9);
-  z-index: 9999; /* z-indexを大きな値に設定 */
+  position: fixed; /* 固定配置 */
+  top: 0; /* ページ上部に配置 */
+  left: 0; /* 左端に配置 */
+  width: 100%; /* 幅を画面全体に広げる */
+  background-color: rgba(255, 255, 255, 0.9); /* 背景色を白っぽく */
+  z-index: 1000; /* 他の要素より前面に表示 */
   padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* ドロップシャドウ */
 }
 
 /* プルダウンメニューのセレクトボックス */
 .dropdown-menu {
-  font-size: 16px;
-  padding: 10px;
+  font-size: 20px; /* フォントサイズを大きく */
+  padding: 12px 20px; /* 内側の余白を大きく */
   border-radius: 5px;
   border: 1px solid #ccc;
   background-color: #fff;
   cursor: pointer;
-  transition: all 0.3s ease;
+  width: 100%; /* セレクトボックスの幅を広げる */
+  box-sizing: border-box; /* パディングも含めた幅調整 */
 }
 
 /* ホバー時の効果 */
